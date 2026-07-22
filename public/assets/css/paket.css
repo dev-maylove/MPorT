@@ -1,0 +1,177 @@
+/* ===============================
+   MandalaNet Premium Paket
+   =============================== */
+
+:root{
+    --primary:#00d9ff;
+    --secondary:#7b5cff;
+    --success:#00ff9d;
+    --glass:rgba(255,255,255,.08);
+    --border:rgba(255,255,255,.18);
+}
+
+body{
+    background:
+    radial-gradient(circle at top left,#00d9ff22,transparent 40%),
+    radial-gradient(circle at bottom right,#7b5cff22,transparent 40%);
+}
+
+#page-paket{
+    position:relative;
+    overflow:hidden;
+    padding:90px 0;
+}
+
+#page-paket::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background-image:
+    linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);
+    background-size:40px 40px;
+    pointer-events:none;
+}
+
+.packages-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.package-card{
+    position:relative;
+    overflow:hidden;
+    border-radius:28px;
+    padding:35px;
+    background:var(--glass);
+    backdrop-filter:blur(18px);
+    border:1px solid var(--border);
+    transition:.4s;
+    box-shadow:
+    0 0 25px rgba(0,217,255,.12);
+}
+
+.package-card:hover{
+    transform:translateY(-12px);
+    border-color:var(--primary);
+    box-shadow:
+    0 15px 45px rgba(0,217,255,.28);
+}
+
+.package-card::before{
+    content:"";
+    position:absolute;
+    top:-120%;
+    left:-60%;
+    width:60%;
+    height:250%;
+    background:linear-gradient(
+        transparent,
+        rgba(255,255,255,.18),
+        transparent
+    );
+    transform:rotate(25deg);
+    transition:1s;
+}
+
+.package-card:hover::before{
+    left:140%;
+}
+
+.package-card.featured{
+    border:2px solid var(--primary);
+    box-shadow:
+    0 0 45px rgba(0,217,255,.35);
+}
+
+.package-badge{
+    position:absolute;
+    top:18px;
+    right:18px;
+    background:linear-gradient(135deg,#00d9ff,#7b5cff);
+    color:#fff;
+    padding:8px 16px;
+    border-radius:30px;
+    font-size:12px;
+    font-weight:700;
+}
+
+.package-icon{
+    width:90px;
+    height:90px;
+    margin:auto;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:36px;
+    background:linear-gradient(135deg,#00d9ff,#7b5cff);
+    color:#fff;
+    margin-bottom:25px;
+    transition:.4s;
+}
+
+.package-card:hover .package-icon{
+    transform:scale(1.1) rotate(8deg);
+}
+
+.package-name{
+    font-size:1.5rem;
+    font-weight:700;
+    text-align:center;
+}
+
+.package-speed{
+    text-align:center;
+    margin:18px 0;
+}
+
+.speed-number{
+    font-size:3rem;
+    font-weight:800;
+    color:#00d9ff;
+}
+
+.speed-number small{
+    font-size:1rem;
+}
+
+.package-price{
+    text-align:center;
+    font-size:2rem;
+    font-weight:800;
+    margin:20px 0;
+}
+
+.package-features{
+    list-style:none;
+    margin:25px 0;
+    padding:0;
+}
+
+.package-features li{
+    padding:10px 0;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.package-features i.fa-check{
+    color:#00ff9d;
+}
+
+.package-features i.fa-times{
+    color:#ff5b5b;
+}
+
+.package-card .btn{
+    margin-top:25px;
+    border-radius:50px;
+    background:linear-gradient(135deg,#00d9ff,#7b5cff);
+    color:#fff;
+    font-weight:700;
+    transition:.35s;
+}
+
+.package-card .btn:hover{
+    transform:scale(1.05);
+}

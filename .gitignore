@@ -1,0 +1,42 @@
+# Environment
+.env
+
+# Composer
+/vendor/
+
+# Storage
+/storage/logs/*
+!/storage/logs/.gitkeep
+
+/storage/cache/*
+!/storage/cache/.gitkeep
+
+/storage/sessions/*
+!/storage/sessions/.gitkeep
+
+/storage/uploads/*
+!/storage/uploads/.gitkeep
+
+/storage/temp/*
+!/storage/temp/.gitkeep
+
+/storage/backups/*
+!/storage/backups/.gitkeep
+
+# Node
+node_modules/
+
+# Build
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

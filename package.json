@@ -1,0 +1,21 @@
+{
+  "name": "mport",
+  "version": "1.0.0",
+  "description": "Aplikasi Portal MandalaNet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-maylove/MPorT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/dev-maylove/MPorT/issues"
+  },
+  "homepage": "https://github.com/dev-maylove/MPorT#readme"
+}
